@@ -1,9 +1,9 @@
 [
   {
     "remote": "github",
-    "repository": "Feinzer/fz_kernel_oneplus_msm8974",
+    "repository": "bacon-dev/android_kernel_oneplus_msm8974",
     "target_path": "kernel/oneplus/msm8974",
-    "branch": "fz-ten"
+    "branch": "ten"
   },
   {
     "repository": "android_vendor_oneplus_bacon",
@@ -12,8 +12,8 @@
   },
   {
     "remote": "github",
-    "repository": "bacon-dev/prebuilts_gcc_linux-x86_arm_arm-eabi-linaro-7",
-    "target_path": "prebuilts/gcc/linux-x86/arm/arm-eabi-linaro-7",
+    "repository": "Jprimero15/lolz_clang",
+    "target_path": "prebuilts/clang/host/linux-x86/clang-lolz",
     "branch": "master"
   }
 ]
