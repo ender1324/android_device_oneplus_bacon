@@ -21,14 +21,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/bacon/bacon.mk)
 
 # Inherit some common Xtended stuff.
-$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
+$(call inherit-product, vendor/titanium/config/common.mk)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
 # Device identifications
-PRODUCT_NAME := xtended_bacon
+PRODUCT_NAME := titanium_bacon
 PRODUCT_DEVICE := bacon
 PRODUCT_BRAND := oneplus
 PRODUCT_MANUFACTURER := OnePlus
@@ -46,4 +46,4 @@ BUILD_FINGERPRINT := oneplus/bacon/A0001:5.1.1/LMY48B/YOG4PAS1N0:user/release-ke
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
 
-XTENDED_BUILD_TYPE := OFFICIAL
+TITANIUM_BUILD_TYPE := OFFICIAL

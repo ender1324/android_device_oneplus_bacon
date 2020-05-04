@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xtended_bacon.mk
+    $(LOCAL_DIR)/titanium_bacon.mk
 
 COMMON_LUNCH_CHOICES := \
-    xtended_bacon-user \
-    xtended_bacon-userdebug \
-    xtended_bacon-eng
+    titanium_bacon-user \
+    titanium_bacon-userdebug \
+    titanium_bacon-eng
