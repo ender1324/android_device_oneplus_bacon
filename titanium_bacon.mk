@@ -47,3 +47,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
 
 TITANIUM_BUILD_TYPE := OFFICIAL
+
+# Titanium specific bs
+DISABLE_DEFAULT_CAMERA := true
