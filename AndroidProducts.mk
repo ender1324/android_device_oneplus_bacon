@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/titanium_bacon.mk
+    $(LOCAL_DIR)/fluid_bacon.mk
 
 COMMON_LUNCH_CHOICES := \
-    titanium_bacon-user \
-    titanium_bacon-userdebug \
-    titanium_bacon-eng
+    fluid_bacon-user \
+    fluid_bacon-userdebug \
+    fluid_bacon-eng
