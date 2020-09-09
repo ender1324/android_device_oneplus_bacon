@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/fluid_bacon.mk
+    $(LOCAL_DIR)/aosip_bacon.mk
 
 COMMON_LUNCH_CHOICES := \
-    fluid_bacon-user \
-    fluid_bacon-userdebug \
-    fluid_bacon-eng
+    aosip_bacon-user \
+    aosip_bacon-userdebug \
+    aosip_bacon-eng

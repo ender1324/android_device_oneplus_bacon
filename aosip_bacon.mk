@@ -20,15 +20,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from bacon device
 $(call inherit-product, device/oneplus/bacon/bacon.mk)
 
-# Inherit some common Fluid stuff.
-$(call inherit-product, vendor/fluid/config/common_full_phone.mk)
+# Inherit some common aosip stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
 # Device identifications
-PRODUCT_NAME := fluid_bacon
+PRODUCT_NAME := aosip_bacon
 PRODUCT_DEVICE := bacon
 PRODUCT_BRAND := oneplus
 PRODUCT_MANUFACTURER := OnePlus
@@ -46,8 +46,3 @@ BUILD_FINGERPRINT := oneplus/bacon/A0001:5.1.1/LMY48B/YOG4PAS1N0:user/release-ke
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
 
-# Fluid specific bs
-DISABLE_DEFAULT_CAMERA := false
-TARGET_GAPPS_BUILD := false
-TARGET_GAPPS_GO := false
-FLUID_BUILD_TYPE := OFFICIAL
