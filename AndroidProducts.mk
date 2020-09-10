@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xtended_bacon.mk
+    $(LOCAL_DIR)/fluid_bacon.mk
 
 COMMON_LUNCH_CHOICES := \
-    xtended_bacon-user \
-    xtended_bacon-userdebug \
-    xtended_bacon-eng
+    fluid_bacon-user \
+    fluid_bacon-userdebug \
+    fluid_bacon-eng
