@@ -9,11 +9,5 @@
     "repository": "android_vendor_oneplus_bacon",
     "target_path": "vendor/oneplus/bacon",
     "branch": "xq"
-  },
-  {
-    "remote": "github",
-    "repository": "Jprimero15/lolz_clang",
-    "target_path": "prebuilts/clang/host/linux-x86/clang-lolz",
-    "branch": "master"
   }
 ]

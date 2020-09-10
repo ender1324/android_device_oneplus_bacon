@@ -61,6 +61,7 @@ USE_CUSTOM_AUDIO_POLICY := 0
 USE_XML_AUDIO_POLICY_CONF := 1
 USE_LEGACY_AUDIO_POLICY := 1
 
+
 # Binder
 TARGET_USES_64_BIT_BINDER := true
 
@@ -95,8 +96,12 @@ endif
 # DT2W
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
 
-# DUP
+# Build
 BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
+BUILD_BROKEN_USES_BUILD_HOST_EXECUTABLE := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+BUILD_BROKEN_PREBUILT_ELF_FILES := true
 
 # Encryption
 TARGET_HW_DISK_ENCRYPTION := true
@@ -151,9 +156,9 @@ LZMA_RAMDISK_TARGETS := [boot,recovery]
 TARGET_KERNEL_ARCH := arm
 
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=bacon user_debug=31 msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.bootdevice=msm_sdcc.1
-#BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_CMDLINE += loop.max_part=7
-TARGET_KERNEL_CONFIG := fz_bacon_defconfig
+TARGET_KERNEL_CONFIG := bacon_defconfig
 TARGET_KERNEL_SOURCE := kernel/oneplus/msm8974
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-eabi-
 KERNEL_TOOLCHAIN := $(PWD)/prebuilts/gcc/linux-x86/arm/arm-eabi-linaro-7/bin
@@ -162,7 +167,7 @@ KERNEL_TOOLCHAIN := $(PWD)/prebuilts/gcc/linux-x86/arm/arm-eabi-linaro-7/bin
 TARGET_PROVIDES_LIBLIGHT := true
 
 # PHONY
-BUILD_BROKEN_PHONY_TARGETS := true
+# BUILD_BROKEN_PHONY_TARGETS := true
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
