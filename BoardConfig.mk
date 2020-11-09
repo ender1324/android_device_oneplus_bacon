@@ -166,6 +166,9 @@ KERNEL_TOOLCHAIN := $(PWD)/prebuilts/gcc/linux-x86/arm/arm-eabi-linaro-7/bin
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 
+# Legacy memfd
+TARGET_HAS_MEMFD_BACKPORT := true
+
 # PHONY
 # BUILD_BROKEN_PHONY_TARGETS := true
 
