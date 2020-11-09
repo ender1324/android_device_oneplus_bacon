@@ -33,13 +33,11 @@
 #include <android-base/strings.h>
 
 #include "vendor_init.h"
-#include "property_service.h"
 
 #include "init_msm8974.h"
 
 using android::base::ReadFileToString;
 using android::base::Split;
-using android::init::property_set;
 
 void import_kernel_cmdline(const std::function<void(const std::string&, const std::string&)>& fn) {
     std::string cmdline;
@@ -67,4 +65,15 @@ static void import_kernel_nv(const std::string& key, const std::string& value)
 void init_target_properties()
 {
     import_kernel_cmdline(import_kernel_nv);
+}
+
+void property_override(char const prop[], char const value[], bool add = true)
+{
+    auto pi = (prop_info *) __system_property_find(prop);
+
+    if (pi != nullptr) {
+        __system_property_update(pi, value, strlen(value));
+    } else if (add) {
+        __system_property_add(prop, strlen(prop), value, strlen(value));
+    }
 }
