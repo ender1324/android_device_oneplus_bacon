@@ -196,7 +196,7 @@ BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 PLATFORM_SEPOLICY_VERSION_TEST := false
 
 # Shims
-TARGET_LD_SHIM_LIBS := /system/vendor/lib/libril-qc-qmi-1.so|libaudioclient_shim.so
+TARGET_LD_SHIM_LIBS += /system/vendor/lib/libril-qc-qmi-1.so|libaudioclient_shim.so
 
 # TWRP
 ifeq ($(WITH_TWRP),true)
